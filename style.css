@@ -6,3 +6,19 @@
 #profilePicture {
   border-radius: 50%;
 }
+
+#overview-header {
+  justify-content: space-between;
+}
+
+.icon-square {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 0.75rem;
+}
+
+.hero-section {
+  background-color: #ada196;
+  /* background-color: #b0a499; */
+  /* background-color: #445957; */
+}

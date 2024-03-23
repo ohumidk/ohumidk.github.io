@@ -13,39 +13,41 @@
   </head>
 
   <body>
-    <div class="container">
-      <section>
-        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-          <div class="col-10 col-sm-8 col-lg-6">
-            <img
-              id="profilePicture"
-              src="./assets/profile.jpg"
-              class="d-block mx-lg-auto img-fluid"
-              alt="Bootstrap Themes"
-              width="700"
-              height="500"
-              loading="lazy"
-            />
-          </div>
-          <div class="col-lg-6">
-            <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">
-              Mark Mendoza the Developer
-            </h1>
-            <p class="lead">
-              My name is Mark Mendoza and I have been doing software development
-              for 3+ years. Most of my professional career has been in .NET
-              mobile development using tools like Xamarin.Forms and MAUI. For my
-              personal work, I use Flutter where I am working on a mobile
-              budgeting app during my spare time.
-            </p>
-            <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-              <a
-                class="btn btn-primary btn-lg px-4 me-md-2"
-                type="button"
-                href="mailto:mendoza.mark007@gmail.com"
-              >
-                Contact Me
-              </a>
+    <div>
+      <section class="hero-section">
+        <div class="container">
+          <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+            <div class="col-10 col-sm-8 col-lg-6">
+              <img
+                id="profilePicture"
+                src="./assets/profile.jpg"
+                class="d-block mx-lg-auto img-fluid"
+                alt="Bootstrap Themes"
+                width="700"
+                height="500"
+                loading="lazy"
+              />
+            </div>
+            <div class="col-lg-6">
+              <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">
+                Mark Mendoza the Developer
+              </h1>
+              <p class="lead">
+                My name is Mark Mendoza and I have been doing software
+                development for 3+ years. Most of my professional career has
+                been in .NET mobile development using tools like Xamarin.Forms
+                and MAUI. For my personal work, I use Flutter where I am working
+                on a mobile budgeting app during my spare time.
+              </p>
+              <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                <a
+                  class="btn btn-primary btn-lg px-4 me-md-2"
+                  type="button"
+                  href="mailto:mendoza.mark007@gmail.com?subject=Lets Get In Touch"
+                >
+                  Contact Me
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -54,9 +56,15 @@
       <section>
         <div class="py-5" id="hanging-icons">
           <div>
-            <div class="d-flex">
-              <h2 class="col-10">Overview</h2>
-              <button class="btn btn-primary">Full Resume</button>
+            <div id="overview-header" class="d-flex align-items-end">
+              <h2>Overview</h2>
+              <a
+                class="btn btn-primary"
+                type="button"
+                href="./pages/resume.html"
+              >
+                Full Resume
+              </a>
             </div>
             <hr />
           </div>
@@ -66,9 +74,11 @@
               <div
                 class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3"
               >
-                <svg class="bi" width="1em" height="1em">
-                  <use xlink:href="#cpu-fill"></use>
-                </svg>
+                <img
+                  src="./assets/education.svg"
+                  alt="education icon"
+                  height="30"
+                />
               </div>
               <div>
                 <h3 class="fs-2 text-body-emphasis">Education</h3>
@@ -82,16 +92,18 @@
                     Mesquite TX - August 2017 - May 2021
                   </li>
                 </ul>
-                <a href="#" class="btn btn-primary"> Primary button </a>
               </div>
             </div>
+
             <div class="col d-flex align-items-start">
               <div
                 class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3"
               >
-                <svg class="bi" width="1em" height="1em">
-                  <use xlink:href="#tools"></use>
-                </svg>
+                <img
+                  src="./assets/work_experience.svg"
+                  alt="work experience icon"
+                  height="30"
+                />
               </div>
               <div>
                 <h3 class="fs-2 text-body-emphasis">Work Experience</h3>
@@ -105,134 +117,133 @@
                     Intern February 2020 - May 2021
                   </li>
                 </ul>
-                <a href="#" class="btn btn-primary"> Primary button </a>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <h2>Skills</h2>
-      <p>Skills (list relevant skills or areas of expertise)</p>
-      <!-- Awards, certifications, or other achievements (list any relevant awards, certifications, or other accomplishments) -->
+      <section>
+        <div class="py-5" id="custom-cards">
+          <h2 class="pb-2 border-bottom">Projects</h2>
 
-      <div class="py-5" id="custom-cards">
-        <h2 class="pb-2 border-bottom">Projects</h2>
-
-        <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
-          <div class="col">
-            <div
-              class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
-              style="background-image: url('unsplash-photo-1.jpg')"
-            >
+          <div
+            class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5"
+          >
+            <div class="col">
               <div
-                class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1"
+                class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+                style="background-image: url('unsplash-photo-1.jpg')"
               >
-                <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
-                  Short title, long jacket
-                </h3>
-                <ul class="d-flex list-unstyled mt-auto">
-                  <li class="me-auto">
-                    <img
-                      src="https://github.com/twbs.png"
-                      alt="Bootstrap"
-                      width="32"
-                      height="32"
-                      class="rounded-circle border border-white"
-                    />
-                  </li>
-                  <li class="d-flex align-items-center me-3">
-                    <svg class="bi me-2" width="1em" height="1em">
-                      <use xlink:href="#geo-fill"></use>
-                    </svg>
-                    <small>Earth</small>
-                  </li>
-                  <li class="d-flex align-items-center">
-                    <svg class="bi me-2" width="1em" height="1em">
-                      <use xlink:href="#calendar3"></use>
-                    </svg>
-                    <small>3d</small>
-                  </li>
-                </ul>
+                <div
+                  class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1"
+                >
+                  <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
+                    Short title, long jacket
+                  </h3>
+                  <ul class="d-flex list-unstyled mt-auto">
+                    <li class="me-auto">
+                      <img
+                        src="https://github.com/twbs.png"
+                        alt="Bootstrap"
+                        width="32"
+                        height="32"
+                        class="rounded-circle border border-white"
+                      />
+                    </li>
+                    <li class="d-flex align-items-center me-3">
+                      <svg class="bi me-2" width="1em" height="1em">
+                        <use xlink:href="#geo-fill"></use>
+                      </svg>
+                      <small>Earth</small>
+                    </li>
+                    <li class="d-flex align-items-center">
+                      <svg class="bi me-2" width="1em" height="1em">
+                        <use xlink:href="#calendar3"></use>
+                      </svg>
+                      <small>3d</small>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
-          </div>
 
-          <div class="col">
-            <div
-              class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
-              style="background-image: url('unsplash-photo-2.jpg')"
-            >
+            <div class="col">
               <div
-                class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1"
+                class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+                style="background-image: url('unsplash-photo-2.jpg')"
               >
-                <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
-                  Much longer title that wraps to multiple lines
-                </h3>
-                <ul class="d-flex list-unstyled mt-auto">
-                  <li class="me-auto">
-                    <img
-                      src="https://github.com/twbs.png"
-                      alt="Bootstrap"
-                      width="32"
-                      height="32"
-                      class="rounded-circle border border-white"
-                    />
-                  </li>
-                  <li class="d-flex align-items-center me-3">
-                    <svg class="bi me-2" width="1em" height="1em">
-                      <use xlink:href="#geo-fill"></use>
-                    </svg>
-                    <small>Pakistan</small>
-                  </li>
-                  <li class="d-flex align-items-center">
-                    <svg class="bi me-2" width="1em" height="1em">
-                      <use xlink:href="#calendar3"></use>
-                    </svg>
-                    <small>4d</small>
-                  </li>
-                </ul>
+                <div
+                  class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1"
+                >
+                  <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
+                    Much longer title that wraps to multiple lines
+                  </h3>
+                  <ul class="d-flex list-unstyled mt-auto">
+                    <li class="me-auto">
+                      <img
+                        src="https://github.com/twbs.png"
+                        alt="Bootstrap"
+                        width="32"
+                        height="32"
+                        class="rounded-circle border border-white"
+                      />
+                    </li>
+                    <li class="d-flex align-items-center me-3">
+                      <svg class="bi me-2" width="1em" height="1em">
+                        <use xlink:href="#geo-fill"></use>
+                      </svg>
+                      <small>Pakistan</small>
+                    </li>
+                    <li class="d-flex align-items-center">
+                      <svg class="bi me-2" width="1em" height="1em">
+                        <use xlink:href="#calendar3"></use>
+                      </svg>
+                      <small>4d</small>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
-          </div>
 
-          <div class="col">
-            <div
-              class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
-              style="background-image: url('unsplash-photo-3.jpg')"
-            >
-              <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
-                <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
-                  Another longer title belongs here
-                </h3>
-                <ul class="d-flex list-unstyled mt-auto">
-                  <li class="me-auto">
-                    <img
-                      src="https://github.com/twbs.png"
-                      alt="Bootstrap"
-                      width="32"
-                      height="32"
-                      class="rounded-circle border border-white"
-                    />
-                  </li>
-                  <li class="d-flex align-items-center me-3">
-                    <svg class="bi me-2" width="1em" height="1em">
-                      <use xlink:href="#geo-fill"></use>
-                    </svg>
-                    <small>California</small>
-                  </li>
-                  <li class="d-flex align-items-center">
-                    <svg class="bi me-2" width="1em" height="1em">
-                      <use xlink:href="#calendar3"></use>
-                    </svg>
-                    <small>5d</small>
-                  </li>
-                </ul>
+            <div class="col">
+              <div
+                class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+                style="background-image: url('unsplash-photo-3.jpg')"
+              >
+                <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+                  <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
+                    Another longer title belongs here
+                  </h3>
+                  <ul class="d-flex list-unstyled mt-auto">
+                    <li class="me-auto">
+                      <img
+                        src="https://github.com/twbs.png"
+                        alt="Bootstrap"
+                        width="32"
+                        height="32"
+                        class="rounded-circle border border-white"
+                      />
+                    </li>
+                    <li class="d-flex align-items-center me-3">
+                      <svg class="bi me-2" width="1em" height="1em">
+                        <use xlink:href="#geo-fill"></use>
+                      </svg>
+                      <small>California</small>
+                    </li>
+                    <li class="d-flex align-items-center">
+                      <svg class="bi me-2" width="1em" height="1em">
+                        <use xlink:href="#calendar3"></use>
+                      </svg>
+                      <small>5d</small>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
       <footer>
         <p>This is a footer</p>
