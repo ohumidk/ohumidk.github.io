@@ -26,3 +26,28 @@
 .card {
   cursor: pointer;
 }
+.privacy-policy-footer {
+  margin-top: 5rem;
+  background-color: #171717;
+  color: white;
+}
+
+.privacy-policy-footer > div > div > div > h1 {
+  color: white !important;
+  margin-bottom: 20px;
+}
+
+.privacy-policy-footer a {
+  background-color: #81C784;
+  border-color: #81C784;
+  color: black;
+}
+
+.privacy-policy-page {
+  background-color: #171717;
+  color: white;
+}
+
+.privacy-policy-page span {
+  color: white !important;
+}
